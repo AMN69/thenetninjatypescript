@@ -8,7 +8,12 @@
 //   console.log('hello, again');
 // }
 
-const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
+// AMN - you can define types of elements to avoid repeting long types in 
+// several funcions.
+
+type numOrStr = number | string
+
+const add = (a: number, b: number, c/*?*/: numOrStr = 10): void => {
   console.log(a + b);
   console.log(c);
 }
