@@ -24,3 +24,10 @@ let logDetails: (obj: {name: string, age: number}) => void;
 logDetails = (ninja: {name: string, age: number}) => {
   console.log(`${ninja.name} is ${ninja.age} years old`);
 }
+
+// AMN - example 3 bis: combination of type aliases and function signatures
+let logDetails2: (obj: {name: string, age: number}) => void
+type person = {name: string, age: number}
+logDetails2 = (ninja: person) => {
+  console.log(`${ninja.name} is ${ninja.age} years old`)
+}
