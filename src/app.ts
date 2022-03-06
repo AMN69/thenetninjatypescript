@@ -18,10 +18,10 @@ class Invoice {
 const invOne = new Invoice('mario', 'work on the mario website', 250);
 const invTwo = new Invoice('luigi', 'work on the luigi website', 300);
 
-let invoices: Invoice[] = [];
+let invoices: Invoice[] = []; //AMN only objects Invoice are allowed in this array 
 invoices.push(invOne)
 invoices.push(invTwo);
-// invoices.push({ name: 'shaun' });
+// invoices.push({ name: 'shaun' }); //AMN - Not allowed because invoices as defined above only accept Invoice type
 
 console.log(invoices);
 
